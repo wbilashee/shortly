@@ -15,6 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 
   &.noscroll {
     overflow: hidden;
@@ -96,6 +97,19 @@ a {
 
   &-ai-c {
     align-items: center;
+  }
+}
+
+// Grid
+.grid {
+  display: grid;
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-ji-c {
+    justify-items: center;
   }
 }
 

@@ -107,6 +107,10 @@
         margin-right: 0.4rem;
         color: $grayishViolet;
         background: transparent;
+
+        &:hover::before {
+          opacity: 0;
+        }
       }
     }
   }
