@@ -1,0 +1,113 @@
+.header {
+  position: relative;
+  z-index: 1;
+
+  nav {
+    position: relative;
+    padding-top: 2.5rem;
+    padding-bottom: 0;
+
+    @include breakpoint-up(large) {
+      padding-top: 3rem;
+    }
+  }
+
+  &__logo {
+    flex: 1;
+    height: 2rem;
+
+    @include breakpoint-up(large) {
+      flex: 0;
+    }
+  }
+
+  &__toggle {
+    > span {
+      display: block;
+      width: 24px;
+      height: 3px;
+      background-color: $grayishViolet;
+
+      &:not(:last-child) {
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background: $darkViolet;
+    margin-top: 1.5rem;
+    padding: 1.625rem;
+    border-radius: 5px;
+
+    a {
+      display: block;
+      color: white;
+      padding: 0.9375rem;
+      text-align: center;
+      font-size: 1.0625rem;
+      font-weight: 600;
+
+      &:nth-child(3) {
+        margin-bottom: 0.875rem;
+      }
+    }
+
+    &__buttons {
+      padding: 0.3125rem 0;
+      border-top: 1px solid gray;
+
+      .button {
+        padding: 0.5625rem 1.5625rem;
+
+        &:first-child {
+          background: transparent;
+          margin: 0.625rem 0;
+
+          &:hover::before {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__links {
+    flex: 2;
+    margin-left: 2.8rem;
+    margin-top: -0.8125rem;
+
+    a {
+      position: relative;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      color: $grayishViolet;
+      transition: color 300ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      &:hover {
+        color: $darkViolet;
+      }
+    }
+  }
+
+  &__buttons {
+    .button {
+      padding: 0.5625rem 1.5625rem;
+      font-weight: 700;
+
+      &:first-child {
+        margin-right: 0.4rem;
+        color: $grayishViolet;
+        background: transparent;
+      }
+    }
+  }
+}

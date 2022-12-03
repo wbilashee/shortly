@@ -27,7 +27,7 @@ a {
 
 // Spacing
 .container {
-  max-width: 66.5rem;
+  max-width: 72rem;
   margin: 0 auto;
 
   &--pall {
@@ -140,7 +140,7 @@ button,
 }
 
 .hide-for-desktop {
-  @include breakpoint-up(medium) {
+  @include breakpoint-up(large) {
     display: none;
   }
 }
