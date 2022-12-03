@@ -1,0 +1,124 @@
+.statistics {
+  background: #f0f1f6;
+  padding: 10rem 0 5rem;
+
+  @include breakpoint-up(large) {
+    padding: 10rem 0 7rem;
+  }
+
+  &__intro {
+    text-align: center;
+
+    h1 {
+      font-size: 1.65rem;
+      margin-bottom: 0.5rem;
+
+      @include breakpoint-up(large) {
+        font-size: 2.5rem;
+      }
+    }
+
+    p {
+      margin: auto;
+      font-size: 1rem;
+
+      @include breakpoint-up(large) {
+        width: 45%;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  &__container {
+    margin: auto;
+    margin-top: 6rem;
+    position: relative;
+    flex-direction: column;
+    z-index: 1;
+
+    @include breakpoint-up(large) {
+      flex-direction: row;
+      margin-top: 1.5rem;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0.5rem;
+      height: 50%;
+      background: $cyan;
+      left: 50%;
+      top: 50%;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+
+      @include breakpoint-up(large) {
+        top: auto;
+        bottom: 45%;
+        width: 50%;
+        height: 0.5rem;
+      }
+    }
+
+    .statistics__card {
+      width: 100%;
+      position: relative;
+      text-align: center;
+      background: white;
+      border-radius: 5px;
+      padding: 4rem 1.5rem 1rem;
+
+      @include breakpoint-up(large) {
+        width: 31.5%;
+        height: auto;
+        text-align: left;
+      }
+
+      &:nth-child(2) {
+        margin-top: 6rem;
+
+        @include breakpoint-up(large) {
+          margin-top: 5rem;
+        }
+      }
+
+      &:last-child {
+        margin-top: 6rem;
+
+        @include breakpoint-up(large) {
+          margin-top: 10rem;
+        }
+      }
+
+      .card__img {
+        background: $darkViolet;
+        display: grid;
+        place-items: center;
+        width: 5.25rem;
+        height: 5.25rem;
+        border-radius: 50%;
+        position: absolute;
+        top: -3rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include breakpoint-up(large) {
+          left: 1.5rem;
+          transform: none;
+        }
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 1.35rem;
+        color: $veryDarkBlue;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 0.9375rem;
+      }
+    }
+  }
+}

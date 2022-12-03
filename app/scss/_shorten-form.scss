@@ -1,7 +1,7 @@
 .shorten-form {
   position: relative;
-  margin: 0 auto -4rem;
   padding: 2rem 1.5rem;
+  margin: 0 auto -5.75rem;
   border-radius: 0.625rem;
   grid-template-columns: 1fr;
   gap: 1.5rem;
@@ -10,7 +10,7 @@
 
   @include breakpoint-up(medium) {
     padding: 2.5rem;
-    margin: 4rem auto -4rem;
+    margin: 4rem auto -5.5rem;
     grid-template-columns: 1fr auto;
     background: $darkViolet url("../images/bg-shorten-desktop.svg");
   }

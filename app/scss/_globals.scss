@@ -26,6 +26,17 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: $grayishViolet;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $veryDarkBlue;
+}
+
 // Spacing
 .container {
   max-width: 72rem;
