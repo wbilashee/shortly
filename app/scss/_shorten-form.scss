@@ -1,0 +1,63 @@
+.shorten-form {
+  position: relative;
+  margin: 0 auto -4rem;
+  padding: 2rem 1.5rem;
+  border-radius: 0.625rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  background: $darkViolet url("../images/bg-shorten-mobile.svg") no-repeat top
+    right;
+
+  @include breakpoint-up(medium) {
+    padding: 2.5rem;
+    margin: 4rem auto -4rem;
+    grid-template-columns: 1fr auto;
+    background: $darkViolet url("../images/bg-shorten-desktop.svg");
+  }
+
+  @include breakpoint-up(large) {
+    padding: 3.5rem 4rem;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-family: inherit;
+    padding: 0.75rem 1.125rem;
+
+    @include breakpoint-up(medium) {
+      font-size: 1.125rem;
+      border-radius: 0.75rem;
+      padding: 1.125rem 2rem;
+    }
+
+    &[type="url"] {
+      width: 100%;
+
+      &::placeholder {
+        font-size: 1rem;
+        color: $grayishViolet;
+        text-shadow: 0 0 0px;
+
+        @include breakpoint-up(medium) {
+          font-size: 1.1875rem;
+        }
+      }
+    }
+  }
+
+  .button {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 0.625rem 2.5rem;
+
+    @include breakpoint-up(medium) {
+      width: auto;
+      border-radius: 0.75rem;
+    }
+  }
+}

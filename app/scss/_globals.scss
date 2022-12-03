@@ -116,16 +116,18 @@ a {
 // Buttons
 button,
 .button {
-  position: relative;
-  display: inline-block;
-  padding: 0.875rem 2.1875rem;
+  border: none;
+  outline: none;
   background: $cyan;
-  border: 0;
-  border-radius: 50px;
+  position: relative;
   cursor: pointer;
   color: white;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  display: inline-block;
+  padding: 0.875rem 2.1875rem;
+  border-radius: 3.125rem;
   transition: opacity 300ms ease-in-out;
   overflow: hidden;
 
