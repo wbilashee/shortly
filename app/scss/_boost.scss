@@ -1,0 +1,27 @@
+.boost {
+  padding: 5.5rem 0;
+  text-align: center;
+  background: $darkViolet url("../images/bg-boost-mobile.svg");
+
+  @include breakpoint-up(medium) {
+    padding: 2.65rem 0;
+    background: $darkViolet url("../images/bg-boost-desktop.svg");
+  }
+
+  &__content {
+    h1 {
+      color: white;
+      margin-top: 0;
+      font-size: 1.65rem;
+
+      @include breakpoint-up(medium) {
+        font-size: 2.3rem;
+      }
+    }
+
+    .button {
+      font-size: 1.125rem;
+      font-weight: 700;
+    }
+  }
+}

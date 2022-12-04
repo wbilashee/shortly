@@ -556,4 +556,30 @@ button:hover::before,
 .statistics__container .statistics__card p {
   font-weight: 500;
   font-size: 0.9375rem;
+}
+
+.boost {
+  padding: 5.5rem 0;
+  text-align: center;
+  background: hsl(257deg, 27%, 26%) url("../images/bg-boost-mobile.svg");
+}
+@media (min-width: 40em) {
+  .boost {
+    padding: 2.65rem 0;
+    background: hsl(257deg, 27%, 26%) url("../images/bg-boost-desktop.svg");
+  }
+}
+.boost__content h1 {
+  color: white;
+  margin-top: 0;
+  font-size: 1.65rem;
+}
+@media (min-width: 40em) {
+  .boost__content h1 {
+    font-size: 2.3rem;
+  }
+}
+.boost__content .button {
+  font-size: 1.125rem;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
