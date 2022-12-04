@@ -1,0 +1,88 @@
+.footer {
+  padding: 4rem 0;
+  background: $veryDarkViolet;
+
+  &__container {
+    display: block;
+    text-align: center;
+    grid-template-columns: 1.8fr 1fr 1fr 1fr 0.7fr;
+
+    @include breakpoint-up(large) {
+      display: grid;
+      text-align: left;
+    }
+
+    img {
+      margin-bottom: 3rem;
+
+      @include breakpoint-up(large) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__links {
+    margin-bottom: 3rem;
+
+    @include breakpoint-up(large) {
+      margin-bottom: 0;
+    }
+
+    a {
+      font-size: 0.9375rem;
+
+      &:first-child {
+        color: white;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+
+      display: block;
+      color: $grayishViolet;
+      margin-bottom: 0.5rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover:not(:first-child) {
+        color: $cyan;
+      }
+    }
+  }
+
+  &__social {
+    align-items: baseline;
+    justify-content: center;
+
+    @include breakpoint-up(large) {
+      justify-content: unset;
+    }
+
+    svg {
+      cursor: pointer;
+
+      path {
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        path {
+          fill: $cyan;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 1.125rem;
+      }
+    }
+  }
+
+  .attribution {
+    color: white;
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+
+    a {
+      color: white;
+    }
+  }
+}

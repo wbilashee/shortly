@@ -582,4 +582,81 @@ button:hover::before,
 .boost__content .button {
   font-size: 1.125rem;
   font-weight: 700;
+}
+
+.footer {
+  padding: 4rem 0;
+  background: hsl(260deg, 8%, 14%);
+}
+.footer__container {
+  display: block;
+  text-align: center;
+  grid-template-columns: 1.8fr 1fr 1fr 1fr 0.7fr;
+}
+@media (min-width: 64em) {
+  .footer__container {
+    display: grid;
+    text-align: left;
+  }
+}
+.footer__container img {
+  margin-bottom: 3rem;
+}
+@media (min-width: 64em) {
+  .footer__container img {
+    margin-bottom: 0;
+  }
+}
+.footer__links {
+  margin-bottom: 3rem;
+}
+@media (min-width: 64em) {
+  .footer__links {
+    margin-bottom: 0;
+  }
+}
+.footer__links a {
+  font-size: 0.9375rem;
+  display: block;
+  color: hsl(257deg, 7%, 63%);
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.footer__links a:first-child {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.footer__links a:hover:not(:first-child) {
+  color: hsl(180deg, 66%, 49%);
+}
+.footer__social {
+  align-items: baseline;
+  justify-content: center;
+}
+@media (min-width: 64em) {
+  .footer__social {
+    justify-content: unset;
+  }
+}
+.footer__social svg {
+  cursor: pointer;
+}
+.footer__social svg path {
+  transition: all 0.3s ease-in-out;
+}
+.footer__social svg:hover path {
+  fill: hsl(180deg, 66%, 49%);
+}
+.footer__social svg:not(:last-child) {
+  margin-right: 1.125rem;
+}
+.footer .attribution {
+  color: white;
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+.footer .attribution a {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
