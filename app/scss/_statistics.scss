@@ -1,9 +1,9 @@
 .statistics {
   background: #f0f1f6;
-  padding: 10rem 0 5rem;
+  padding: 2rem 0 5rem;
 
   @include breakpoint-up(large) {
-    padding: 10rem 0 7rem;
+    padding: 2rem 0 7rem;
   }
 
   &__intro {
